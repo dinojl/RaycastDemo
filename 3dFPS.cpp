@@ -145,14 +145,15 @@ public:
 
 int main()
 {
+	// Enables High Resolution mode
 	Game game;
-	const bool HR = true;
+	const bool HR = false;
 	if (!HR) {
 		if (game.Construct(120, 40, 8, 16))
 			game.Start();
 	}
 	else {
-		if (game.Construct(480, 320, 2, 2))
+		if (game.Construct(1280, 720, 1, 1))
 			game.Start();
 	}
 	return 0;
