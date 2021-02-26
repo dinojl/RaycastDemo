@@ -152,7 +152,7 @@ public:
 						float testPointX = playerX + eyeX * distanceToWall;
 						float testPointY = playerY + eyeY * distanceToWall;
 						
-						float testAngle = atan2f((testPointY - blockMidY), (testPointX = blockMidX));
+						float testAngle = atan2f((testPointY - blockMidY), (testPointX - blockMidX));
 
 						if (testAngle >= -3.14159f * 0.25f && testAngle < 3.14159f * 0.25f)
 							sampleX = testPointY - (float)testY;
